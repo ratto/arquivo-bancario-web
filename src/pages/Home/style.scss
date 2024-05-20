@@ -1,0 +1,28 @@
+#home-page {
+  height: 93.75%;
+
+  #cover {
+    display: flex;
+    height: 100%;
+    background: #222 url('../../assets/bank-cover.jpeg') center center no-repeat;
+    background-size: cover;
+    align-items: center;
+  }
+
+  .card {
+    background-color: rgba(5, 4, 58, 0.75);
+
+    &.cover-card {
+      border: 2px solid #fff;
+      border-radius: 0.75rem;
+      width: 50rem;
+      box-shadow: 10px 10px 20px;
+
+      & > .card-body {
+        background-color: rgba(5, 4, 58, 0);
+        text-align: justify;
+        color: #fff !important;
+      }
+    }
+  }
+}

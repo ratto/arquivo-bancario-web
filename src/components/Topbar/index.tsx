@@ -4,10 +4,10 @@ import './style.scss';
 
 export const Topbar = () => {
   return (
-    <Navbar expand={false} className="bg-body-tertiary mb-3">
+    <Navbar expand={false} sticky="top" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Toggle aria-controls="menu-navbar" />
-        <LinkContainer to="/">
+        <LinkContainer to={'/'}>
           <Navbar.Brand className="me-auto ms-4">Gerador de Arquivos Bancários</Navbar.Brand>
         </LinkContainer>
         <Navbar.Offcanvas id="menu-navbar" aria-labelledby="menu-navbar-label" placement="start">
@@ -16,16 +16,16 @@ export const Topbar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <LinkContainer to="/">
+              <LinkContainer to={'/'}>
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/">
+              <LinkContainer to={'/'}>
                 <Nav.Link disabled>Arquivos de Pagamento</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/">
+              <LinkContainer to={'/'}>
                 <Nav.Link disabled>Arquivos de Cobrança</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/sobre">
+              <LinkContainer to={'/sobre'}>
                 <Nav.Link>Sobre</Nav.Link>
               </LinkContainer>
             </Nav>

@@ -1,14 +1,15 @@
+import { NavLink } from 'react-router-dom';
 import './style.scss';
 
 export const Erro = () => {
   return (
-    <>
-      <h1>Página de erro</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus quae culpa aut aspernatur laborum,
-        sint, pariatur excepturi facere ea ullam cumque voluptate necessitatibus corrupti quibusdam at. Corporis,
-        mollitia quae.
-      </p>
-    </>
+    <div id="pagina-erro">
+      <div className="mensagem-box">
+        <h1>Oops! Algo deu errado</h1>
+        <p>
+          Não sei bem o que aconteceu, mas tente <NavLink to="/">voltar para o início</NavLink>.
+        </p>
+      </div>
+    </div>
   );
 };
