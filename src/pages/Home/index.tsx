@@ -3,7 +3,7 @@ import './style.scss';
 
 export const Home = () => {
   return (
-    <div id="home-page">
+    <div id="home-page" className="page-layout">
       <section id="cover">
         <div id="cover-caption">
           <Card className="cover-card ms-5">
