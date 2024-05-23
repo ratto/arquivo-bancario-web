@@ -7,6 +7,7 @@ import { Erro } from './pages/Erro';
 import { Topbar } from './components/Topbar';
 import { Footer } from './components/Footer';
 import './global.scss';
+import { ArquivosRetorno } from './pages/ArquivosRetorno';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Topbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/arquivos-retorno" element={<ArquivosRetorno />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="*" element={<Erro />} />
         </Routes>

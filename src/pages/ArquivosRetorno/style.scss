@@ -1,0 +1,17 @@
+#arquivos-retorno-page {
+  $tabs-border-size: 1px;
+
+  width: 100%;
+
+  & .tab-container {
+    border: none;
+
+    & .tab-content {
+      border-top: $tabs-border-size solid #fff;
+      border-left: $tabs-border-size solid #dee2e6;
+      border-bottom: $tabs-border-size solid #dee2e6;
+      border-right: $tabs-border-size solid #dee2e6;
+      border-radius: 0 0 0.375rem 0.375rem;
+    }
+  }
+}

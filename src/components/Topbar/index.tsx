@@ -19,11 +19,8 @@ export const Topbar = () => {
               <LinkContainer to={'/'}>
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
-              <LinkContainer to={'/'}>
-                <Nav.Link disabled>Arquivos de Pagamento</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to={'/'}>
-                <Nav.Link disabled>Arquivos de Cobrança</Nav.Link>
+              <LinkContainer to={'/arquivos-retorno'}>
+                <Nav.Link>Arquivos de Retorno</Nav.Link>
               </LinkContainer>
               <LinkContainer to={'/sobre'}>
                 <Nav.Link>Sobre</Nav.Link>
